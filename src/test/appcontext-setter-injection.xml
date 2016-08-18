@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd"
+        xmlns:p="http://www.springframework.org/schema/p">
+
+	<bean id="empId" class="model.Employee">
+		<property name="name" value="fatih"></property>
+		<property name="surname" value="sevük"></property>
+		<property name="salary" value="2000"></property>
+		<property name="birthYear" value="1991"></property>
+		<property name="gender" value="M"></property>
+		
+	</bean>
+	
+	
+	<bean id="emp2Id" class="model.Employee"
+	
+		p:name="Test"
+		p:surname="testtest"
+		p:salary="1000"
+		p:birthYear="1300"
+		p:gender="M"
+	
+	/>
+	
+	
+	<bean id="computerId" class="model.Computer">
+	
+		<property name="marka" value="asus"></property>
+		<property name="fiyat" value="3000"></property>
+		<property name="keyboard" ref="keyboardId"></property>
+	
+	</bean>
+	
+	
+	<bean id="keyboardId" class="model.Keyboard">
+	
+	
+		<property name="model" value="logitech"></property>
+	
+	</bean>
+	
+	
+	
+	
+	
+	
+	
+	
+</beans>
